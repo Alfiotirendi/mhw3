@@ -70,12 +70,13 @@ if(result.primary_photo_cropped != null && i<num_results)
 		const boxdog = document.createElement('div');
 		const img = document.createElement('img');
 		img.src = immagine;
+		img.classList.add('fotoadozione');
 		const breed = document.createElement('h3');
 		breed.textContent = result.breeds.primary;
 		const info = document.createElement('a');
 		info.href = result.url;
 		info.textContent = 'più info'
-		info.classList.add('coll')
+		info.classList.add('collad')
 		boxdog.appendChild(img);
 		boxdog.appendChild(breed);
 		boxdog.appendChild(info);
